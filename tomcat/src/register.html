@@ -1,63 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--<style>
+    table{
+    width: 50%;
+    spacing:50%
+    }
+</style>-->
+<style>
+      table {
+        border-collapse: separate;
+        border-spacing: 0 15px;
+      }
+      th,
+      td {
+        width: auto;
+        text-align: left;
+        border: 1px solid black;
+        padding: 5px;
+      }
+    </style>
 <head>
     <meta charset="UTF-8">
     <title>Registration</title>
 </head>
 <body>
-    <img src="https://www.zoho.com/branding/images/zoho-logo.png" height="50" width="150">
-    <br><br>
+<center>
+    <img src="https://www.zoho.com/branding/images/zoho-logo.png" height="50" width="150" style="align:center">
 <form>
-    <label>User Name</label>
-    <input type="text" size="20"><br><br>
+    <table>
+<br>
+    <tr>
+        <td><label>User Name</label></td>
+        <td><input type="text" size="20"></td>
+    </tr>
 
-    <label>Password</label>
-    <input type="password" size="20"><br><br>
+    <tr>
+        <td><label>Password</label></td>
+        <td><input type="password" size="20"></td>
+    </tr>
 
-    <label>Confirm Password</label>
-    <input type="password" size="20"><br><br>
+    <tr>
+        <td><label>Confirm Password</label></td>
+        <td><input type="password" size="20"></td>
+    </tr>
 
-    <label>Email ID</label>
-    <input type="text" size="20"><br><br>
+    <tr>
+        <td><label>Email ID</label></td>
+        <td><input type="text" size="20"></td>
+    </tr>
 
-    <label>Mobile number</label>
-    <input type="number" size="20"><br><br>
+    <tr>
+        <td><label>Mobile number</label></td>
+        <td><input type="number" size="20"></td>
+    </tr>
 
-    <label>Date Of Birth</label>
-    <input type="date" size="20"><br><br>
+    <tr>
+        <td><label>Date Of Birth</label></td>
+        <td><input type="date" size="20"></td>
+    </tr>
 
-    <label>Gender</label><br>
-    <input type="radio" name="gender" >Male<br>
-    <input type="radio" name="gender" >Female<br>
-    <input type="radio" name="gender" >Others<br>
+    <tr>
+        <td><label>Gender</label></td>
+        <td>
+            <input type="radio" name="gender" >Male
+            <input type="radio" name="gender" >Female
+            <input type="radio" name="gender" >Others
+        </td>
+    </tr>
 
-    <br><label>Hobbies</label><br>
-    <textarea></textarea>
+    <tr>
+        <td><label>Hobbies</label></td>
+        <td><textarea></textarea></td>
+    </tr>
 
-    <br><br>
-    <label>State</label><br>
-    <select size="1">
-        <option>Tamil Nadu</option>
-        <option>Kerala</option>
-        <option>Kashmir</option>
-        <option>Delhi</option>
-    </select>
-    <br><br>
-    <label>Country</label><br>
-    <select size="1">
-        <option>India</option>
-        <option>Japan</option>
-        <option>Korea</option>
-        <option>Australia</option>
-    </select>
+    <tr>
+        <td>
+            <label>State</label>
+        </td>
+        <td>
+            <select size="1">
+                <option>Tamil Nadu</option>
+                <option>Kerala</option>
+                <option>Kashmir</option>
+                <option>Delhi</option>
+            </select><br>
+        </td>
+    </tr>
 
-    <br><br><label>Comments</label><br>
-    <textarea></textarea><br><br>
+    <tr>
+        <td><label>Country</label></td>
+        <td>
+            <select size="1">
+            <option>India</option>
+            <option>Japan</option>
+            <option>Korea</option>
+            <option>Australia</option>
+        </select>
+        </td>
+    </tr>
 
-    <input type="checkbox"> <a href="https://www.google.com/search?q=terms+and+conditions&oq=terms+and+&aqs=chrome.0.0i433i512j0i512j69i57j0i512l5j46i512j0i512.1906j0j7&sourceid=chrome&ie=UTF-8">Terms and conditions</a>
+    <tr>
+        <td><label>Comments</label></td>
+        <td><textarea></textarea><br></td>
+    </tr>
 
-    <br><br><button type="submit">Submit</button>
-    <button type="reset">Reset</button>
+
+
+</table>
+
+            <input type="checkbox"> <a href="https://www.google.com/search?q=terms+and+conditions&oq=terms+and+&aqs=chrome.0.0i433i512j0i512j69i57j0i512l5j46i512j0i512.1906j0j7&sourceid=chrome&ie=UTF-8">Terms and conditions</a>
+        <br><br>
+        <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
 </form>
+</center>
 </body>
 </html>

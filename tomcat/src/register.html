@@ -7,15 +7,66 @@
     }
 </style>-->
 <style>
+input[type=text]:focus {
+  border-bottom: 1px solid blue;
+color: blue;
+  font-weight: italic;
+}
+input[type=password]:focus {
+  border-bottom: 1px solid blue;
+  color:blue;
+  font-weight: italic;
+}
+input[type=number]:focus {
+  border-bottom: 1px solid blue;
+  color:blue;
+  font-weight: italic;
+}
+input[type=text]{
+  border: 0px solid;
+  outline:none;
+  border-bottom: 1px solid grey;
+}
+input[type=password]{
+  border: 0px solid;
+  outline:none;
+  border-bottom: 1px solid grey;
+}
+input[type=number]{
+border: none;
+  outline: none;
+  border-bottom: 1px solid grey;
+}
+input[type=date]{
+  border: none;
+  border-bottom: 1px solid grey;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+button{
+  border: 1px solid blue;
+  border-bottom: 1px solid grey;
+}
+button:focus{
+outline:none;
+  border: 1px solid blue;
+  border-bottom: 1px solid grey;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
       table {
         border-collapse: separate;
         border-spacing: 0 15px;
       }
       th,
       td {
-        width: auto;
+        width: 200px;
         text-align: left;
-        border: 1px solid black;
+<!--        border: 1px solid black;-->
         padding: 5px;
       }
     </style>
@@ -31,27 +82,27 @@
 <br>
     <tr>
         <td><label>User Name</label></td>
-        <td><input type="text" size="20"></td>
+        <td><input type="text" size="20" placeholder="Name" required></td>
     </tr>
 
     <tr>
         <td><label>Password</label></td>
-        <td><input type="password" size="20"></td>
+        <td><input type="password" placeholder="Password" size="20"></td>
     </tr>
 
     <tr>
         <td><label>Confirm Password</label></td>
-        <td><input type="password" size="20"></td>
+        <td><input type="password" placeholder="Confirm Password" size="20"></td>
     </tr>
 
     <tr>
         <td><label>Email ID</label></td>
-        <td><input type="text" size="20"></td>
+        <td><input type="text" placeholder="Email ID" size="20"></td>
     </tr>
 
     <tr>
         <td><label>Mobile number</label></td>
-        <td><input type="number" size="20"></td>
+        <td><input type="number" placeholder="Mobile number" size="20"></td>
     </tr>
 
     <tr>
@@ -101,7 +152,7 @@
 
     <tr>
         <td><label>Comments</label></td>
-        <td><textarea></textarea><br></td>
+        <td><textarea placeholder="Please enter your valuable comments"></textarea><br></td>
     </tr>
 
 
